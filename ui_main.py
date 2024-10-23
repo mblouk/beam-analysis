@@ -1,4 +1,4 @@
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtWidgets import QPushButton, QVBoxLayout, QHBoxLayout, QWidget, QListWidget
 
 from pyqtgraph import PlotWidget
 
@@ -47,7 +47,7 @@ class Ui_MainWindow():
 
         # Creation d'un layout pour le graphe
         self.plot_layout = QVBoxLayout()
-        self.plot_widget = pg.PlotWidget(title="Profil du Faisceau")
+        self.plot_widget = PlotWidget(title="Profil du Faisceau")
         self.plot_widget.setBackground('w')  # Changer le fond en blanc
         self.plot_layout.addWidget(self.plot_widget)
         widget_v3.setLayout(self.plot_layout)
