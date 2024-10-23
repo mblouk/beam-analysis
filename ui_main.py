@@ -6,7 +6,7 @@ class Ui_MainWindow():
     def setupUi(self, parent):
 
         parent.setWindowTitle("Analyse du profil d'un faisceau ")
-        # self.setFixedSize(1200,1000)
+        parent.setFixedSize(1200,1000)
 
         widget = QWidget()
         parent.setCentralWidget(widget)
