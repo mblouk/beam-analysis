@@ -1,4 +1,6 @@
-from PyQt5 import QtWidgets
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+from pyqtgraph import PlotWidget
 
 class Ui_MainWindow():
     def setupUi(self, parent):
