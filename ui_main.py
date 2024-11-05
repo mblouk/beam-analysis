@@ -39,7 +39,7 @@ class Ui_MainWindow():
         self.layout_v1.addWidget(self.pushbutton_plot)
         self.layout_v1.addWidget(self.pushbutton_smooth)
         self.layout_v1.addWidget(self.pushbutton_fit)
-        self.layout_v1.addWidget(self.pushbuuton_clear)
+        self.layout_v1.addWidget(self.pushbutton_clear)
 
         # Creation de deux conteneurs pour le graphe et la largeur
         widget_v3 = QWidget()
