@@ -32,12 +32,14 @@ class Ui_MainWindow():
         self.pushbutton_plot = QPushButton("Plot")
         self.pushbutton_smooth = QPushButton("Smooth")
         self.pushbutton_fit = QPushButton("Fit")
+        self.pushbutton_clear= QPushButton("Clear")
 
         # Insertion des boutons dans le premier layout verticale
         self.layout_v1.addWidget(self.pushbutton_import)
         self.layout_v1.addWidget(self.pushbutton_plot)
         self.layout_v1.addWidget(self.pushbutton_smooth)
         self.layout_v1.addWidget(self.pushbutton_fit)
+        self.layout_v1.addWidget(self.pushbuuton_clear)
 
         # Creation de deux conteneurs pour le graphe et la largeur
         widget_v3 = QWidget()
