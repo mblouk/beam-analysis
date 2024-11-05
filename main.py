@@ -22,6 +22,7 @@ class MainWindow(QMainWindow):
         self.ui.pushbutton_plot.clicked.connect(self.plot_data)
         self.ui.pushbutton_smooth.clicked.connect(self.smooth_data)
         self.ui.pushbutton_fit.clicked.connect(self.fit_data)
+        self.ui.pushbutton_clear.clicked.connect(self.clear)
 
         # Initialisation la variable de données
         self.data = None
@@ -133,6 +134,10 @@ class MainWindow(QMainWindow):
                 print(f"Erreur dans curve_fit: {e}")
         else:
             self.ui.listwidget.addItem("Importer des données!")
+
+    def clear(self):
+        self.ui.plot_widget.clear()
+        self.ui.listwidget.clear()
 
 
 if __name__ == '__main__':
