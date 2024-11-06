@@ -30,6 +30,8 @@ class MainWindow(QMainWindow):
     #Fonctions
 
     def import_data(self):
+        ''' Import data from csv file. '''
+        
         filename, _ = QFileDialog.getOpenFileName(self, "Ouvrir un fichier", "", "Fichiers CSV (*.csv)")
         if filename:
             try:
