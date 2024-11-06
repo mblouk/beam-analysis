@@ -52,6 +52,7 @@ class MainWindow(QMainWindow):
             self.ui.listwidget.addItem("Importer des données!")
 
     def smooth_data(self):
+        ''' Smooth data. '''
         if self.data is not None:
             x_data = self.data[:, 0]
             I_data = self.data[:, 1]
